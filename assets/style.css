@@ -1,0 +1,204 @@
+/* -------------------- Global Styles -------------------- */
+body {
+    background-color: #f7f9fc;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------- Header -------------------- */
+.header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(90deg, #4e54c8, #ea0e2c);
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+}
+
+/* -------------------- Card -------------------- */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: visible;
+}
+
+/* -------------------- Role Badge -------------------- */
+.role-badge {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+/* -------------------- Metric Box -------------------- */
+.metric-box {
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin: 1rem 0;
+   
+}
+
+.metric-box h3 {
+    margin-bottom: 0.5rem;
+    color: red;
+}
+
+.metric-box p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+/* -------------------- Footer -------------------- */
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: red;
+}
+
+/* -------------------- Responsive Design (Mobile) -------------------- */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 1rem !important;
+        margin: 1rem auto;
+    }
+
+    .card h2 {
+        font-size: 1.3rem !important;
+    }
+
+    .card p,
+    .card strong {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        visibility: visible !important;
+        display: block !important;
+    }
+
+    .role-badge {
+        font-size: 0.9rem !important;
+        padding: 0.4rem 0.8rem;
+    }
+
+    h2, h3 {
+        font-size: 1.2rem !important;
+    }
+
+    p {
+        font-size: 1rem !important;
+    }
+
+    .block-container .stTextInput,
+    .stButton {
+        width: 100% !important;
+    }
+
+    .stColumns {
+        display: block !important;
+    }
+
+    .stColumn {
+        width: 100% !important;
+        display: block !important;
+    }
+
+    progress {
+        width: 100%;
+        height: 8px;
+        display: block;
+        margin-top: 0.5rem;
+    }
+}
+
+/* -------------------- Ensure Card Content Visibility -------------------- */
+.card h2,
+.card p,
+.card strong {
+    white-space: normal !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    visibility: visible;
+    display: block;
+}
+
+/* -------------------- Extra Safety: apply to all card children -------------------- */
+.card, .card * {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+/* Fix missing paragraph text on mobile inside .card */
+.card p {
+    display: block !important;
+    visibility: visible !important;
+    color: #120bdb !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+/* -------------------- Metric Box Visibility Fix -------------------- */
+.metric-box, .metric-box * {
+    visibility: visible !important;
+    display: block !important;
+    color: #f70e0e !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Fix for mobile screens */
+@media (max-width: 768px) {
+    .metric-box p,
+    .metric-box h3 {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        visibility: visible !important;
+        display: block !important;
+        white-space: normal !important;
+        
+        
+    }
+
+    .metric-box {
+        margin: 1rem auto !important;
+        text-align: center !important;
+        padding: 1rem !important;
+    }
+}
